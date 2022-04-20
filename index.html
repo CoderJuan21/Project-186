@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>A-FRAME SPE PARTILE SYSTEM EXAMPLE</title>
+   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+   <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+
+    
+</head>
+
+<body>
+  <a-scene id="scene">
+ <a-entity position="0 1 0" spe-particles="
+ color:yellow,red,cyan,#192db2;
+ distribution:sphere;
+ radius:5;
+ randomize-velocity:true;
+ particle-count:1000,800,1300,400;
+ velocity:4;
+ velocity-spread:60;
+ drag:0;
+ max-age:2;
+ duration:-2;
+ blending:additive;
+ active-mulitiplier:10000;
+ size:3,2,2,4;
+ randomize-drag:true;
+ randomize-position:true;
+ randomize-size:true;
+ wiggle:5;
+ has-perspective:true;
+ affected-by-fog:true;
+ direction:backward;
+ ">
+</a-entity>
+
+    <a-sky color="black"></a-sky>
+    <a-camera position="0 0 30"></a-camera>
+  </a-scene>
+</body>
+
+</html>
